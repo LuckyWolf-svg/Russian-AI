@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 import speech_recognition as sr
-#from gpt import gpt
+from gpt import gpt
 import sounddevice as sd
 from vosk import Model, KaldiRecognizer
 import json
@@ -24,7 +24,7 @@ class NeuralSpeaker: # There a model for voice acting your text
         return audio
 
     def input_and_speak(self, text):
-        input_text = (text)  # Give text to GPT
+        input_text = gpt(text)  # Give text to GPT
         audio_data = self.speak(input_text)
 
         sd.play(audio_data, 48000, device=8)  # Playing file to virtual Microphone
