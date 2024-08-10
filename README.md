@@ -1,4 +1,5 @@
 ![image](https://github.com/user-attachments/assets/09ee1fa8-319d-49e0-b1fd-ce2a5aae665f)
+
 Инструкция, внутри кода я вставил пояснения почти каждого предложения, весь проект сделан в PyCharm (python 3.12)
 В коде присутствует 2 теста
 
